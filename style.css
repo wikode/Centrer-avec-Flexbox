@@ -1,0 +1,48 @@
+/* RESET GLOBAL CSS : */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* Mise en forme du body (facultatif) : */
+    background-color: lightgoldenrodyellow;
+
+    /* Il faut préciser la taille de l'élément parent de la div pour que la div puisse se positionner par rapport à cette taille. On fixe la hauteur du body à 100% de la hauteur de l'écran (100vh = 100% de la viewheight) : */
+    height: 100vh;
+
+    /* Mise en forme avec flexbox : pour centrer les éléments enfants de body, body doit être un élément flex : */
+    display: flex;
+    /* Aligner les élément enfants de body (la div ici) selon l'axe horizontal : */
+    justify-content: center;
+    /* Aligner les élément enfants de body (la div ici) selon l'axe vertical : */
+    align-items: center;
+
+}
+
+.div-centrale{
+    /* Mise en forme de la div (facultatif) : */
+    background-color: lightsalmon;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.2);
+
+    /* On précise la taille de notre div. C'est un bloc, il faut une hauteur et une largeur. Pour le côté responsive, on utilise encore les unités relatives à la taille de l'écran : viewheight (hauteur de l'écran; vh) et viewwidth (largeur de l'écran; vw) : */
+    height: 20vh;
+    width: 50vw;
+
+    /* Pour centrer les éléments dans la div, il faut que la div soit un élément flex : */
+    display: flex;
+    /* Puis, pour aligner selon l'axe horizontal et vertical, c'est identique à ce que l'on vient de faire sur le body : */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texte-central{
+    /* Mise en forme de la div (facultatif) : */
+    font-family: sans-serif;
+    font-weight: bold;
+}
